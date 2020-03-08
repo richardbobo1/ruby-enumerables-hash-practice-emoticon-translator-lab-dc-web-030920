@@ -11,6 +11,8 @@ translation = YAML.load_file(link)
  translation.each do |x, y| 
       result["get_meaning"][y[1]] = x
     result["get_emoticon"][y[0]] = y[1]
+  end 
+  result 
  
 end
 
