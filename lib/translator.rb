@@ -18,7 +18,7 @@ def get_japanese_emoticon(file, string)
   if translation["get_emoticon"].include?(string) 
    translation["get_emoticon"][string]
   else 
-    "Sorry, not in dictionary."
+    "Sorry, that emoticon was not found"
   end 
   
 end
@@ -31,7 +31,7 @@ def get_english_meaning(file, japanese_string)
   if translation["get_meaning"].include?(japanese_string) 
    translation["get_meaning"][japanese_string]
   else 
-    "Sorry, not in dictionary."
+    "Sorry, that emoticon was not found"
   end 
   
 end
