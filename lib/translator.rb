@@ -7,7 +7,7 @@ require 'yaml'
 
 def load_library(link) 
 translation = YAML.load_file(link)
- result = { :get_meaning => {}, 
+ result = { "get_meaning" => {}, "get_emoticon" => {} }
 end
 
 def get_japanese_emoticon
