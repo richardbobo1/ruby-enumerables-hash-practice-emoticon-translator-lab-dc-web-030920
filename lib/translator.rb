@@ -9,8 +9,8 @@ def load_library(link)
 translation = YAML.load_file(link)
  result = { "get_meaning" => {}, "get_emoticon" => {} }
  translation.each do |x, y| 
-      result["get_meaning"][emoticons[1]] = meaning
-    result["get_emoticon"][emoticons[0]] = emoticons[1]
+      result["get_meaning"][y[1]] = x
+    result["get_emoticon"][y[0]] = y[1]
  
 end
 
