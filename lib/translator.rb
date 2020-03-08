@@ -9,6 +9,7 @@ def load_library(link)
 translation = YAML.load_file(link)
  result = { "get_meaning" => {}, "get_emoticon" => {} }
  translation.each do |x, y| 
+   result = 
  
 end
 
