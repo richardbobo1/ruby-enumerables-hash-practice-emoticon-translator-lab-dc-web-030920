@@ -15,8 +15,8 @@ end
 
 def get_japanese_emoticon(file, string)
   translation = load_library(file) 
-  if result["get_emoticon"].include?(string) 
-   result["get_emoticon"][string]
+  if translation["get_emoticon"].include?(string) 
+   translation["get_emoticon"][string]
   else 
     "Sorry, not in dictionary."
   end 
