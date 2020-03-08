@@ -25,6 +25,13 @@ end
 
 
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(file, japanese_string)
+ 
+   translation = load_library(file) 
+  if translation["get_meaning"].include?(japanese_string) 
+   translation["get_meaning"][japanese_string]
+  else 
+    "Sorry, not in dictionary."
+  end 
+  
 end
