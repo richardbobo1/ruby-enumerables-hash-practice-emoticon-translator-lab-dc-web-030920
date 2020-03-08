@@ -16,8 +16,9 @@ translation = YAML.load_file(link)
  
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, string)
+  
+  
 end
 
 def get_english_meaning
