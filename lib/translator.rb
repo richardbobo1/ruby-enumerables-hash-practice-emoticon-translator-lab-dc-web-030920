@@ -13,7 +13,7 @@ translation = YAML.load_file(link)
     result["get_emoticon"][y[0]] = y[1]
   end 
   result 
- 
+ binding.pry 
 end
 
 def get_japanese_emoticon(file, string)
